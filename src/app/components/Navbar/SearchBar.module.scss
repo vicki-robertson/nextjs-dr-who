@@ -1,0 +1,49 @@
+@import '../../breakpoints';
+@import '../../variables';
+
+
+
+.searchContainer {
+    
+    @include desktop {
+        padding-right: 4rem;
+      }   
+    
+    input {
+        font-family: var(--font-montserrat);
+        font-weight: 700;
+        background-color: transparent;
+        border-color: transparent;
+        @include desktop {
+            width: 7rem;
+          }
+        
+    }
+}
+
+.formControl::placeholder {
+    color: white; 
+    font-size: 2rem;
+    @include desktop {
+        font-size: 1.25rem;
+      }
+  }
+  
+  /* Apply styles to the input field when it has focus */
+  .formControl:focus::placeholder {
+    color: $tertiary-color;
+    font-style: italic;
+    font-size: 1.25rem;  
+  }
+
+.btnSearch {
+    border-style: none;
+    border-radius: 10px;
+    background-color: $background-color;
+    
+    :hover {
+        border-radius: 10px;
+        border: 2px solid $hover-color;
+    }
+}
+

@@ -1,0 +1,8 @@
+@import 'breakpoints';
+
+//same size mobile and desktop
+.form-text {
+    font-family: var(--font-lato);
+    font-weight: 600;
+    font-size: 2rem;
+}

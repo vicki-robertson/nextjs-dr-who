@@ -1,0 +1,13 @@
+@import 'breakpoints';
+
+.btn-text {
+    font-family: var(--font-lato);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+
+    @include desktop {
+        font-size:  2rem;
+      }    
+}
+

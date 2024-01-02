@@ -1,0 +1,16 @@
+@import '../../_breakpoints.scss';
+
+.logo {
+    height: 96px;
+    width: 94px;
+    
+    @include desktop {
+        height: 196px;
+        width: 191px;
+        
+        z-index: 1;
+        margin-top: -3rem;
+        position: fixed;
+        left: 43%;
+      }
+}

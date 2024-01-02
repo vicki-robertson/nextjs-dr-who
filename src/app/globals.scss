@@ -126,24 +126,25 @@ p {
   font-style: italic;
 }
 
-li {
-  font-family: var(--font-montserrat);
-  font-weight: 600;
-  font-size: 2rem;
-
-  @include desktop {
-    font-size:  2.25rem;
-  }
-}
 
 a {
   color: $tertiary-color;
   text-decoration: none;
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  font-size: 2rem;
+
+  @include desktop {
+    font-size:  1.25rem;
+  }
 
     &:hover {
       color: $hover-color;
     }
 }
 
-
+// Overriding bootstrap defaults
+.btn-outline-success {
+  --bs-btn-color: yellow;
+}
 

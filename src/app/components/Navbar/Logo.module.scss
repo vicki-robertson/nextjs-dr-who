@@ -9,8 +9,10 @@
         width: 191px;
         
         z-index: 1;
-        margin-top: 4rem;
-        // position: fixed;
+        // margin-top: 4rem;
+        position: fixed;
+        top: 0;
         left: 43%;
+        padding-top: 0.5rem;
       }
 }

@@ -1,7 +1,24 @@
 @import '../../breakpoints';
 
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    padding: 0 1rem;
+    @include tablet {
+        padding: 1rem 2rem;
+    }
+    @include desktop {
+        padding: 0 4rem;
+    }
+}
+
 .card {
-    height: 813px;
+    max-height: 880px;
+    width: 360px;
     padding: 1rem;
 
     &:hover {
@@ -9,10 +26,35 @@
     transform: scale(1.05, 1.05);
     transition: all 800ms;
     }
+
+    @include desktop {
+        height: 860px;
+    }
 }
 
 .cardBody {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+    
+    p {
+        margin-bottom: 1rem;
+    }
+
     h3 {
-        color: green;
+        margin-bottom: 2.5rem;
+    }
+
+    h4 {
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+    }
+
+    @include desktop {
+        height: 16rem;
+        justify-content: space-between;
+        padding-bottom: 2.5rem;
     }
 }

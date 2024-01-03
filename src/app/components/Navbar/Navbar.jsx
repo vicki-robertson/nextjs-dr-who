@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 export default function Navbar() {
   return (
     <>
-        <nav className={`navbar navbar-expand-xl ${styles.navbarContainer}`} data-bs-theme="dark">
+        <nav className={`navbar sticky-top navbar-expand-xl ${styles.navbarContainer}`} data-bs-theme="dark">
             <div className="container-fluid">
                 <Logo className={styles.logo}/>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

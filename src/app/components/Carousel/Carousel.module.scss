@@ -1,0 +1,33 @@
+@import '../../breakpoints';
+
+.slide {
+    transition: opacity 2s ease;   
+}
+
+.overlayContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20rem;
+    color: white;
+    padding-left: 1.5rem;
+
+    @include desktop {
+        padding-left: 8rem;
+        padding-top: 18rem;
+      }
+  }
+
+  .legend {
+    padding-bottom: 2rem;
+    padding-left: 0.25rem;
+    
+    @include desktop {
+        padding-bottom: 5.5rem;
+      }
+  }
+
+  .carouselImage {
+    height: 860px;
+    object-fit: cover; 
+  }

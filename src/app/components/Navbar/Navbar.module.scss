@@ -5,6 +5,7 @@
     height: 123px;
     padding-left: 1rem;
     padding-right: 1rem;
+    z-index: 3;
 
     @include tablet {
         background-color: $background-color;

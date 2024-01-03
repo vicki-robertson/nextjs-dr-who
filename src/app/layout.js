@@ -4,6 +4,7 @@ import { Lato, Montserrat } from 'next/font/google'
 // components
 import BootstrapClient from './components/BootstrapClient';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
     
 const lato = Lato({ 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
             <Navbar />
             {children}
             <BootstrapClient />
+            <Footer />
           </main>
       </body>
     </html>

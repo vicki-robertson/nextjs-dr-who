@@ -1,0 +1,18 @@
+@import '../../breakpoints';
+
+.card {
+    height: 813px;
+    padding: 1rem;
+
+    &:hover {
+    box-shadow: 0 12px 30px 0 rgb(170, 192, 255);
+    transform: scale(1.05, 1.05);
+    transition: all 800ms;
+    }
+}
+
+.cardBody {
+    h3 {
+        color: green;
+    }
+}

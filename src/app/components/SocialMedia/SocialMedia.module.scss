@@ -1,5 +1,11 @@
+@import '../../variables';
+
 .socialLinks {
     padding: 0 1rem;
-    // align-items: center;
-    // justify-content: right;
+
+    .icon:hover {
+        color: $hover-color;
+    }
 }
+
+

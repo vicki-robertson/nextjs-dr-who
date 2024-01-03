@@ -2,24 +2,24 @@
 @import 'variables';
 
 .main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 70vh;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
-.container {
-  background-color: aqua;
-  height: 400px;
-  width: 400px;
-  display: inherit;
-  align-items: inherit;
-  justify-content: inherit;
+// .container {
+//   background-color: aqua;
+//   height: 400px;
+//   width: 400px;
+//   display: inherit;
+//   align-items: inherit;
+//   justify-content: inherit;
 
-  @include tablet {
-    background-color: blueviolet;
-  }
+//   @include tablet {
+//     background-color: blueviolet;
+//   }
 
-  @include desktop {
-    background-color: $secondary-color;
-  }
-};
+//   @include desktop {
+//     background-color: $secondary-color;
+//   }
+// };

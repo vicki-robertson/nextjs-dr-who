@@ -15,8 +15,8 @@
       }
     
       @include desktop {
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
       }
       
       a {
@@ -52,7 +52,6 @@
 .searchContainer {
   margin-right: 4rem;
   max-width: 13rem;
-  display: flex;
   
   
 }

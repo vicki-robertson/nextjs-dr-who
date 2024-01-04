@@ -1,74 +1,74 @@
+@import '../../breakpoints';
+
 .doctorsContainer {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3.5rem
 }
 
 .gridBox {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.75fr 0.75fr;
     grid-template-areas:
     "title"
     "photo"
-    "info"
-    "info"
-    "button";
+    "info";
+
+    @include desktop {
+            grid-template-columns: 1.5fr 1fr;
+            grid-template-rows: 0.25fr 1fr;
+            grid-template-areas:
+            "title photo"
+            "info photo"
+            "button photo"
+    }
 }
 
 .title {
     text-align: center;
     grid-area: title;
-    min-height: 100px;
     padding: 2.5rem;
+    
+    @include tablet {
+        padding: 2.5rem 5rem 2rem 4rem;
+    }
+    @include desktop {
+        font-size: 96px;
+        padding: 3rem 6rem 2rem 5rem;
+    }
 }
 
 .info {
     text-align: center;
     grid-area: info;
-    padding: 3rem 3.5rem 1.5rem 3.5rem;
-    min-height: 300px;
+    padding: 1.5rem 3.5rem 0.75rem 2rem;
+    
+    @include desktop {
+        padding: 1rem 10rem 2rem 9rem;
+    }
 }
 
 .button {
     text-align: center;
-    grid-area: button;
+    padding-top: 4rem;
     padding-bottom: 4rem;
+    grid-area: button;
 }
 
 .image {
     text-align: center;
+    grid-area: photo;
 }
 
 .doctorPhoto {
-    grid-area: photo;
+    
     height: 470px;
-    // width: 300px;
-    object-fit: cover;
-   padding: 1rem 5rem 0 5rem;
-}
-
-@media all and (min-width: 900px) {
-
-    .gridBox {
-        background-color: gray;
-        height: 100vh;
-        grid-template-columns: 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "title photo"
-        "info photo"
-        "info photo"
-        "button photo";
-    }
-
-    .title {
-        font-size: 96px;
-    }
-
-    .doctorPhoto {
-        grid-area: photo;
-        height: 805px;
-        width: 606px;
-        object-fit: cover;
+    width: 100%;
+    padding: 1rem 3.5rem 1.5rem 3.5rem;
+    @include tablet {
+        height: 814px;
     }
 }

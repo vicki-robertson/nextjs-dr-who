@@ -14,6 +14,8 @@
     @include desktop {
         height: 280px;
         width: 280px;
+        top: 20vh;
+        left: -41vw;
     }
 }
 
@@ -26,6 +28,8 @@
     @include desktop {
         height: 366px;
         width: 366px;
+        top: 41vh;
+        left: -41vw;
     }
 }
 
@@ -40,5 +44,7 @@
     @include desktop {
         height: 540px;
         width: 540px;
+        top: 20vh;
+        left: -34vw;
     }
 }

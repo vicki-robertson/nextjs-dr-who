@@ -1,5 +1,17 @@
 @import '../breakpoints';
 
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    @include desktop {
+        height: 80vh;
+    }
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -49,4 +61,12 @@
     position: absolute;
     top: 0;
     z-index: -1;
+
+    @include tablet {
+        left: 10vw;
+    }
+
+    @include desktop {
+        left: 0;
+    }
 }

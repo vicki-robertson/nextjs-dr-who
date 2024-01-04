@@ -1,0 +1,74 @@
+.doctorsContainer {
+    height: 100%;
+}
+
+.gridBox {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas:
+    "title"
+    "photo"
+    "info"
+    "info"
+    "button";
+}
+
+.title {
+    text-align: center;
+    grid-area: title;
+    min-height: 100px;
+    padding: 2.5rem;
+}
+
+.info {
+    text-align: center;
+    grid-area: info;
+    padding: 3rem 3.5rem 1.5rem 3.5rem;
+    min-height: 300px;
+}
+
+.button {
+    text-align: center;
+    grid-area: button;
+    padding-bottom: 4rem;
+}
+
+.image {
+    text-align: center;
+}
+
+.doctorPhoto {
+    grid-area: photo;
+    height: 470px;
+    // width: 300px;
+    object-fit: cover;
+   padding: 1rem 5rem 0 5rem;
+}
+
+@media all and (min-width: 900px) {
+
+    .gridBox {
+        background-color: gray;
+        height: 100vh;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "title photo"
+        "info photo"
+        "info photo"
+        "button photo";
+    }
+
+    .title {
+        font-size: 96px;
+    }
+
+    .doctorPhoto {
+        grid-area: photo;
+        height: 805px;
+        width: 606px;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,72 @@
+@import '../breakpoints';
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    @include desktop {
+        height: 80vh;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    grid-template-areas:
+        "title"
+        "form";
+    width: 100vw;
+    overflow: hidden;
+    
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "title form";
+    }
+    
+}
+
+.title {
+    padding: 1.5rem 3rem 0 3rem;
+    text-align: center;
+    line-height: normal;
+    grid-area: title;
+
+    @include desktop {
+        padding: 2rem 7rem 0 2.5rem;
+    }
+}
+
+
+.formSection {
+    grid-area: form;
+    padding: 0 1rem;
+}
+
+.formBox {
+    position: relative;
+    padding-bottom: 4rem;
+    
+}
+
+.form {
+    z-index: 0;
+}
+
+.symbolsBox {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    @include tablet {
+        left: 10vw;
+    }
+
+    @include desktop {
+        left: 0;
+    }
+}

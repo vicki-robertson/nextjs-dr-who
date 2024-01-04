@@ -1,0 +1,10 @@
+@import '../breakpoints';
+
+.title {
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    
+    @include desktop {
+    padding-left: 5.5rem;
+    }   
+}

@@ -1,8 +1,10 @@
-import styles from './globals.scss'
+import './globals.scss'
 import { Lato, Montserrat } from 'next/font/google'
 
 // components
 import BootstrapClient from './components/BootstrapClient';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
     
 const lato = Lato({ 
@@ -28,10 +30,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`{styles[main-container]} ${lato.variable} ${montserrat.variable}`}>
+      <body className={`${lato.variable} ${montserrat.variable}`}>
           <main>
+            <Navbar />
             {children}
             <BootstrapClient />
+            <Footer />
           </main>
       </body>
     </html>

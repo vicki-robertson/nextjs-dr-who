@@ -1,6 +1,6 @@
-import styles from './button.module.scss'
+import styles from './SmallButton.module.scss'
 
-const Button = ({ href, children }) => {
+const SmallButton = ({ href, children }) => {
     return (
       <button className={styles.button}>
         <a className={styles.buttonText}
@@ -11,5 +11,4 @@ const Button = ({ href, children }) => {
     );
   };
 
-export default Button
-
+export default SmallButton

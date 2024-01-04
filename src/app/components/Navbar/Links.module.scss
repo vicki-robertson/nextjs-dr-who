@@ -1,0 +1,22 @@
+@import '../../breakpoints';
+
+.linksContainer {
+    
+}
+
+.link {
+    padding-right: 0;
+    @include desktop {
+        padding-right: 3rem;
+        }
+
+    a {
+        font-family: var(--font-montserrat);
+        font-weight: 700;
+        font-size: 2rem;
+
+    @include desktop {
+        font-size:  1.25rem;
+        }
+    }
+}

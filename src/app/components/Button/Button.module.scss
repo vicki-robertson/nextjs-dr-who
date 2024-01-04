@@ -1,13 +1,39 @@
-@import 'breakpoints';
+@import '../../breakpoints';
+@import '../../variables';
 
-.btn-text {
+.button {
+  color: #000;
+  text-align: center;
+  font-family: var(--font-lato);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  background-color: $secondary-color;
+  padding: 1rem 3.5rem;
+  border-radius: 40px;
+  max-height: 7rem;
+}
+
+.button:hover {
+  background-color: $hover-color;
+}
+
+
+.buttonText {
     font-family: var(--font-lato);
     font-style: normal;
     font-weight: 700;
     font-size: 1.75rem;
+    color: $background-color;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
+    &:hover {
+      color: $background-color;   
+    }
+    
     @include desktop {
         font-size:  2rem;
       }    
 }
-

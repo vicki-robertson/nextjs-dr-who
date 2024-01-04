@@ -1,0 +1,74 @@
+@import '../../breakpoints';
+
+.doctorsContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3.5rem
+}
+
+.gridBox {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.75fr 0.75fr;
+    grid-template-areas:
+    "title"
+    "photo"
+    "info";
+
+    @include desktop {
+            grid-template-columns: 1.5fr 1fr;
+            grid-template-rows: 0.25fr 1fr;
+            grid-template-areas:
+            "title photo"
+            "info photo"
+            "button photo"
+    }
+}
+
+.title {
+    text-align: center;
+    grid-area: title;
+    padding: 2.5rem;
+    
+    @include tablet {
+        padding: 2.5rem 5rem 2rem 4rem;
+    }
+    @include desktop {
+        font-size: 96px;
+        padding: 3rem 6rem 2rem 5rem;
+    }
+}
+
+.info {
+    text-align: center;
+    grid-area: info;
+    padding: 1.5rem 3.5rem 0.75rem 2rem;
+    
+    @include desktop {
+        padding: 1rem 10rem 2rem 9rem;
+    }
+}
+
+.button {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    grid-area: button;
+}
+
+.image {
+    text-align: center;
+    grid-area: photo;
+}
+
+.doctorPhoto {
+    
+    height: 470px;
+    width: 100%;
+    padding: 1rem 3.5rem 1.5rem 3.5rem;
+    @include tablet {
+        height: 814px;
+    }
+}

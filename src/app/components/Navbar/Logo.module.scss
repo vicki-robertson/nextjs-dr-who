@@ -1,0 +1,21 @@
+@import '../../_breakpoints.scss';
+
+.logo {
+    height: 96px;
+    width: 94px;
+    
+    @include tablet {
+      height: 120px;
+      width: 116px;
+    }
+    
+    @include desktop {
+        height: 196px;
+        width: 191px;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 43%;
+        padding-top: 0.5rem;
+      }
+}

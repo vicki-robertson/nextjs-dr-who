@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.socialContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a:hover {
+        color: $hover-color;
+    }
+}
+
+.socialLinks {
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+    
+}
+
+

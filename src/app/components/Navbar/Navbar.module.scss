@@ -1,0 +1,68 @@
+@import '../../_variables.scss';
+@import '../../breakpoints.scss';
+
+.navbarContainer {
+    height: 123px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 3;
+    background-color: $background-color;
+
+    @include tablet {
+        background-color: $background-color;
+        height: 167px;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    
+      @include desktop {
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+      
+      a {
+        color: $tertiary-color;
+        text-decoration: none;
+        font-family: var(--font-montserrat);
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+    
+        @include tablet {
+            font-size:  1.25rem;
+        }
+        
+        &:hover {
+            color: $hover-color;
+          }
+    }
+}
+
+.logo {
+  
+}
+
+.linksNav {
+   
+}
+
+.socialsNav {
+  padding-left: 20%;
+}
+
+.searchContainer {
+  margin-right: 4rem;
+  max-width: 13rem;
+  
+  
+}
+
+.collapseContainer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  
+}
+
+
+

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from './Form.module.scss';
-import Button from '../Button/Button';
+import SmallButton from '../Button/SmallButton';
 
 export default function Form() {
 
@@ -54,18 +54,18 @@ export default function Form() {
                     onChange={(e) => setBody(e.target.value)}
                     value={body}
                     id="body"
-                    
+                    placeholder="Mensaje *"
                     className={styles.message}
                     >
                 </textarea>
             </label>
             <div className={styles.button}>
-                <Button
+                <SmallButton
                     disabled={isLoading}
                     >
                         {isLoading && <span>Enviando...</span>}
                         {!isLoading && <span>Enviar</span>}
-                </Button>
+                </SmallButton>
             </div>
         </form>
     </section>

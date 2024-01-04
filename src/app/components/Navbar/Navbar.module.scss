@@ -7,6 +7,7 @@
     padding-right: 1rem;
     z-index: 3;
     background-color: $background-color;
+    
 
     @include tablet {
         background-color: $background-color;
@@ -27,10 +28,13 @@
         font-family: var(--font-montserrat);
         font-weight: 600;
         font-size: 2rem;
-        text-align: center;
     
         @include tablet {
             font-size:  1.25rem;
+        }
+
+        @include desktop {
+          text-align: center;
         }
         
         &:hover {
@@ -39,30 +43,7 @@
     }
 }
 
-.logo {
-  
-}
 
-.linksNav {
-   
-}
-
-.socialsNav {
-  padding-left: 20%;
-}
-
-.searchContainer {
-  margin-right: 4rem;
-  max-width: 13rem;
-  
-  
-}
-
-.collapseContainer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  
-}
 
 
 

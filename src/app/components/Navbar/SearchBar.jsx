@@ -25,6 +25,13 @@ export default function SearchBar() {
   return (
     <div className={styles.searchBox}>
       <div className={`d-flex ${styles.searchContainer}`}>
+      <button
+          className={styles.btnSearch}
+          type="button" 
+          onClick={handleSearch}
+        >
+          <Image src="/icons/search.svg" width={30} height={30} alt="Search" />
+        </button>
         <input
           className={`form-control me-2 ${styles.formControl}`}
           type="text"
@@ -32,15 +39,8 @@ export default function SearchBar() {
           aria-label="Search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && handleSearch()} // Trigger search on "Enter" key press
+          onKeyDown={(e) => e.key === 'Enter' && handleSearch()} 
         />
-        <button
-          className={styles.btnSearch}
-          type="button" // Change the type to "button" to prevent form submission
-          onClick={handleSearch}
-        >
-          <Image src="/icons/search.svg" width={30} height={30} alt="Search" />
-        </button>
       </div>
     </div>
   );

@@ -18,7 +18,9 @@ export default function Navbar() {
                     <div className={styles.searchContainer}>
                       <SearchBar />
                     </div>
-                    <SocialMedia />
+                    <div className={styles.socialMedia}>
+                      <SocialMedia />
+                    </div>
                 </div>
             </div>
         </nav>

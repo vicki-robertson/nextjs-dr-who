@@ -43,6 +43,18 @@
     }
 }
 
+.socialMedia {
+  padding-left: 17%;
+
+  @include tablet {
+    padding-left:31%;
+  }
+
+  @include desktop {
+    padding-left: 0;
+  }
+}
+
 
 
 

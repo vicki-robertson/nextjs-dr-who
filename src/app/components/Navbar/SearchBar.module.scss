@@ -24,7 +24,7 @@
 .formControl::placeholder {
     color: white; 
     font-size: 2rem;
-    @include desktop {
+    @include tablet {
         font-size: 1.25rem;
       }
   }

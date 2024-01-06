@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Doctor Who App
+
+Welcome to the Doctor Who App, your ultimate guide to the fascinating world of Doctor Who! This web application is built using Next.js 14, Bootstrap, Sass, and Vite. Explore information about Doctor Who characters, find detailed profiles, and get in touch with us through the contact page.
+
+## Table of Contents
+
+1. [Getting Started](#getting-started)
+2. [Features](#features)
+3. [Technologies used](#technologies-used)
+3. [Installation](#installation)
+4. [Images](#usage)
+5. [Contributing](#contributing)
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Doctor Who App, simply follow the installation instructions below.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Landing Page:** An engaging landing page with a carousel of images, to welcome users and set the tone for the Doctor Who experience.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Character Information Page:** Explore details about various Doctor Who characters, their backgrounds, and roles in the Doctor Who universe.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Search Bar:** Use the search bar to filter characters by Doctor's name or actor's name.
 
-## Learn More
+- **Search Results Page:** A dedicated page displaying search results based on the entered criteria. Find the information you're looking for quickly and efficiently.
 
-To learn more about Next.js, take a look at the following resources:
+- **Contact Page:** Connect with us through the contact page. Whether you have feedback, questions, or suggestions, we'd love to hear from you!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Detailed Character Page:** Dive deeper into the world of Doctor Who by accessing detailed information about specific characters.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- **Next.js 14:** React framework 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Bootstrap:** Front-end framework
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Sass:** To enhance stylesheets 
+
+- **Vitest:** For testing
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/vicki-robertson/nextjs-dr-who.git
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+
+3. Run the development server:
+
+    ```bash
+    npm run dev
+
+Open your browser and navigate to http://localhost:3000 to explore the Doctor Who App.
+
+## Images
+Photos of the App on desktop devices
+
+### Landing Page
+![Landing Page](./public/app-screenshots/doctor-who-home.png)
+
+### Doctor's Page
+![Doctors Page](./public/app-screenshots/doctor-who-doctors-page.png)
+
+### About... Page
+![About Page](./public/app-screenshots/doctor-who-about.png)
+
+### Contact Page
+![Contact Page](./public/app-screenshots/doctor-who-contact.png)
+
+## Contributing
+
+If you're a Doctor Who enthusiast and would like to contribute to the app, feel free to fork the repository, create a branch for your contributions and then submit pull requests with improvements, bug fixes, or additional features. Your contributions are greatly appreciated!
+
+
+Happy exploring through time and space with the Doctor Who App! 🌌🕰️
+

@@ -4,14 +4,17 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    a:hover {
-        color: $hover-color;
-    }
+    
 }
+
+
 
 .socialLinks {
     padding: 0 1rem;
     align-items: center;
+    :hover {
+        transform: scale(1.4);
+      }
 }
 
 .icon {

@@ -4,9 +4,15 @@
 
 
 .searchContainer {
-    
+    padding-left: 20%;
+    padding-bottom: 6rem;
+
+    @include tablet {
+      padding-left: 36%;
+    }
     @include desktop {
-        padding-right: 4rem;
+      padding-left: 0;
+      padding-bottom: 0;
       }   
     
     input {
@@ -14,17 +20,13 @@
         font-weight: 700;
         background-color: transparent;
         border-color: transparent;
-        @include desktop {
-            width: 7rem;
-          }
-        
     }
 }
 
 .formControl::placeholder {
     color: white; 
     font-size: 2rem;
-    @include desktop {
+    @include tablet {
         font-size: 1.25rem;
       }
   }
@@ -47,3 +49,6 @@
     }
 }
 
+.searchBox {
+  
+}

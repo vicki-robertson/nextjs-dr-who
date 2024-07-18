@@ -1,0 +1,50 @@
+@import '../../breakpoints';
+
+.symbolsBox {
+    position: relative;
+}
+
+.blueSymbol {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    object-fit: cover;
+    
+
+    @include desktop {
+        height: 280px;
+        width: 280px;
+        top: 20vh;
+        left: -41vw;
+    }
+}
+
+.whiteSymbol {
+    position: absolute;
+    top: 32vh;
+    left: -7vw;
+    object-fit: cover;
+
+    @include desktop {
+        height: 366px;
+        width: 366px;
+        top: 41vh;
+        left: -41vw;
+    }
+}
+
+.yellowSymbol {
+    position: absolute;
+    top: 11vh;
+    left: 33vw;
+    transform: rotate(25deg);
+    object-fit: cover;
+    
+
+    @include desktop {
+        height: 540px;
+        width: 540px;
+        top: 20vh;
+        left: -34vw;
+    }
+}

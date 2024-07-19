@@ -1,6 +1,10 @@
 # Doctor Who App
 
-Welcome to the Doctor Who App, your ultimate guide to the fascinating world of Doctor Who! This web application is built using Next.js 14, Bootstrap, Sass, and Vite. Explore information about Doctor Who characters, find detailed profiles, and get in touch with us through the contact page.
+Welcome to the Doctor Who App, your ultimate guide to the fascinating world of Doctor Who! This web application is built using Next.js 14, Bootstrap, Sass, and Vite. Explore information about Doctor Who characters, find detailed profiles, and get in touch through the contact page.
+
+## Deployment
+You can check out the live version here - [Doctor Who App](https://nextjs-dr-who.vercel.app/).
+This project is deployed using Vercel.
 
 ## Table of Contents
 

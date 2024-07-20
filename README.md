@@ -37,11 +37,13 @@ To get started with the Doctor Who App, simply follow the installation instructi
 
 - **Next.js 14:** React framework 
 
-- **Bootstrap:** Front-end framework
+- **Bootstrap 5:** Front-end CSS framework
 
 - **Sass:** To enhance stylesheets 
 
 - **Vitest:** For testing
+  
+- **Cypress:** For End-to-end (E2E) testing
 
 ## Installation
 
